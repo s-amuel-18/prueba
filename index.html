@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Boletos Miami</title>
+    <meta name="description" content="">
+    <meta name="author" content="Boletos Miami">
+    <meta name="keyword" content="Laser, Airlines, aerolinea, avion, viajes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="facebook-domain-verify" content="lx4uarfvevbrpkxj95p237gllw61g2">
+
+    <!-- libreria de iconos -->
+    <link rel="stylesheet" href="./assets/css/font-awesome/font-awesome.min.css">
+
+    <!-- libreria animaciones -->
+    <link href="./assets/css/animate/animate.css" rel="stylesheet" media="screen">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+
+    <!-- estilos de input fecha -->
+    <link rel="stylesheet" href="./plugins/datepiker/css/datepicker.css" />
+
+    <!-- estilos principales -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- librería para códigos Telefónicos -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/> -->
+    <link rel="stylesheet" href="./plugins/intl-tel-input/css/intlTelInput.min.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
+    <script src="./plugins/intl-tel-input/js/intlTelInput.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="p-md-5 p-2 position-fixed top-right z-index-90">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#formFreelance">Únete como freelance
+            aquí</button>
+    </div>
+
+    <!-- contenido aqui -->
+    <section class="bg-secondary bg-image" style="background-image: url(./assets/imgs/newBanner.jpg);">
+
+        <!-- Modal con formulario  -->
+        <div class="container">
+            <!-- estructura del Modal -->
+            <div class="modal fade" id="formFreelance" tabindex="-1" aria-labelledby="FormularioFreelancer" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content" style="background-color: #d8eeff; border: 3px solid #1080ff;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="Formulario">Únete como freelance</h5>
+                        </div>
+                        <div class="modal-body">
+                            Para obtener un acceso a nuestra plataforma y poder comercializar nuestra tarifa y destinos llena el siguiente formulario:
+                            <hr />
+                            <form id="form_modal">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="Nombre">Nombre *</label>
+                                            <input name="nombre" type="text" class="form-control mb-3" id="recipient-name" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="recipient-name">Apellido *</label>
+                                            <input type="text" name="apellido" class="form-control" id="recipient-name" placeholder="Apellido">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group">
+                                </div> -->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="Pais"> País de Residencia *</label>
+                                            <input name="pais_residencia" type="text" class="form-control" id="recipient-name" placeholder="País">
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <label for="Nacionalidad">Nacionalidad *</label>
+                                            <select id="Nacionalidad" class="form-control" name="nacionalidad">
+                                                <option value="">-- Seleccionar Nacionalidad --</option>
+                                                <option value="VE">Venezolano(a)</option>
+                                                <option value="EXT">Extranjero(a)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="Estado"> Estado *</label>
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="Ej. Distrito Capital" name="estado">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="Dirección"> Dirección *</label>
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="Ej. Calle Leonardo da Vinci, 7, 41092 " name="direccion">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- <div class="form-group">
+                                </div> -->
+                                <div class="form-group">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                            <label for="Pais"> Número de pasaporte *</label>
+                                            <input name="numero_pasaporte" type="number" class="form-control" id="recipient-name" placeholder="Número de Pasaporte">
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="Correo"> Correo Electrónico *</label>
+                                            <input name="email" type="email" class="form-control" id="recipient-name" placeholder="ejemplo@gmail.com">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group mb-2">
+                                </div> -->
+                                <div class="form-group">
+                                    <label for="Número"> Número Telefónico *</label>
+                                    <input type="tel" class="form-control" id="phone" name="numero_telefono">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formFile" class="form-label">Adjuntar Foto de RIF *</label>
+                                    <input class="form-control" type="file" id="formFile" name="rif">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ArchivoID" class="form-label">Adjuntar Foto de Pasaporte *</label>
+                                    <input class="form-control" type="file" id="formFile" name="img_pasaporte">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="closeModal" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            <button form="form_modal" type="submit" class="btn btn-info">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-md-6 p-0">
+                    <div class="p-5 bg-form-cotizacion" style="min-height: 100vh;">
+                        <div class="">
+                            <div class="text-secondary text-uppercase">
+                                <!-- <p class="font-weight-light mb-2">NUESTROS PAQUETES</p> -->
+                                <p class="font-weight-light pt-4 mb-3 h2">¡RESERVA YA!</p>
+
+                                <p class=" h4 font-weight-bold">caracas - miami - caracas</p>
+
+                                <h1 class="h3 font-weight-light mb-5">POR TAN SOLO $499</h1>
+                            </div>
+                            <form action="" id="form_cotizador">
+                                <!-- botones header -->
+                                <div class="row no-gutters mb-3">
+                                    <div class="col-12 px-0">
+                                        <button class="btn btn-secondary btn-sm ">Solo Ida</button>
+                                        <button class="btn btn-info btn-sm ">Ida Y Vuelta</button>
+                                    </div>
+                                    <!-- <div class="col-6">
+                                    </div> -->
+                                </div>
+
+                                <!-- campo de origen -->
+                                <div class="form-group">
+                                    <label for="origen">Origen *</label>
+                                    <select id="origen" class="form-control-sm form-control" name="origen">
+                                        <option value="">Origen</option>
+                                        <option value="caracas">Caracas</option>
+                                        <option value="miami">Miami</option>
+                                    </select>
+                                    <!-- <input id="origen" class="form-control-sm form-control" type="text" name="origen"> -->
+                                </div>
+
+                                <!-- destino -->
+                                <div class="form-group">
+                                    <label for="destino">Destino *</label>
+                                    <select id="destino" class="form-control-sm form-control" name="destino">
+                                        <option value="">Destino</option>
+                                        <option value="miami">Miami</option>
+                                        <option value="caracas">Caracas</option>
+
+                                    </select>
+                                    <!-- <input id="origen" class="form-control-sm form-control" type="text" name="origen"> -->
+                                </div>
+
+                                <!-- <div class="form-group">
+                                    <label for="destino">Destino *</label>
+                                    <input id="destino" class="form-control form-control-sm" type="text" name="destino">
+                                </div> -->
+
+                                <div class="row no-gutters mb-3">
+
+                                    <!-- Fecha Partida -->
+                                    <div class="col-6 ">
+                                        <label for="partida">Fecha partida *</label>
+                                        <div class="input-group date" data-provide="datepicker">
+                                            <input id="partida" type="text" class="datepiker form-control form-control-sm" name="fecha_partida">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Fecha Vuelta -->
+                                    <div class="col-6 ">
+                                        <label for="vuelta">Fecha Vuelta *</label>
+                                        <div class="input-group date" data-provide="datepicker">
+
+                                            <input id="vuelta" type="text" class="datepiker form-control form-control-sm" name="fecha_vuelta">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cantidad de Pasajeros -->
+                                <div class="form-group mb-3">
+                                    <label for="pasajeros">Cantidad de Pasajeros *</label>
+                                    <input id="pasajeros" type="number" name="pasajeros" class="form-control form-control-sm" min="1" max="9" value="1">
+                                </div>
+                                <button class="btn btn-info btn-sm" type="submit">BUSCAR VUELOS</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contenido aqui -->
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery-1.10.2.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> -->
+
+    <!-- jquery-validation -->
+    <script src="./plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="./plugins/jquery-validation/additional-methods.min.js"></script>
+
+    <!-- libreria para input fecha -->
+    <script src="./plugins/datepiker/js/bootstrap-datepicker.js"></script>
+
+    <script>
+        $('.datepiker').datepicker()
+
+
+        // $('#formFreelance').modal()
+    </script>
+
+    <!-- <script src=".assets/js/intlTelInput.js"></script> -->
+
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    $(function() {
+
+        $('#form_cotizador').validate({
+            rules: {
+                origen: {
+                    required: true,
+                },
+                destino: {
+                    required: true,
+                },
+                fecha_partida: {
+                    required: true,
+                },
+                fecha_vuelta: {
+                    required: true,
+                },
+                pasajeros: {
+                    required: true
+                },
+            },
+            messages: {
+                origen: {
+                    required: "el campo es requerido",
+                },
+                destino: {
+                    required: "el campo es requerido",
+                }
+            },
+            errorElement: 'span',
+            errorPlacement: function(error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight: function(element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+            },
+            unhighlight: function(element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+            }
+        });
+
+        $('#form_modal').validate({
+            rules: {
+                nombre: {
+                    required: true,
+                },
+                apellido: {
+                    required: true,
+                },
+                nacionalidad: {
+                    required: true,
+                },
+                pais_residencia: {
+                    required: true,
+                },
+                estado: {
+                    required: true,
+                },
+                direccion: {
+                    required: true
+                },
+                numero_pasaporte: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                numero_telefono: {
+                    required: true,
+                },
+                rif: {
+                    required: true,
+                },
+                img_pasaporte: {
+                    required: true,
+                },
+            },
+            messages: {
+                nombre: {
+                    required: " "
+                },
+                apellido: {
+                    required: " "
+                },
+                nacionalidad: {
+                    required: " "
+                },
+                pais_residencia: {
+                    required: " ",
+                },
+                estado: {
+                    required: " ",
+                },
+                direccion: {
+                    required: " "
+                },
+                numero_pasaporte: {
+                    required: " "
+                },
+                email: {
+                    required: " ",
+                    email: "Por favor, introduce una dirección email válida"
+                },
+
+                password: {
+                    required: "Por favor, introduce una contraseña",
+                    minlength: "La contraseña debe contener al menos 5 caracteres"
+                },
+                numero_telefono: {
+                    required: " ",
+                },
+                rif: {
+                    required: " ",
+                },
+                img_pasaporte: {
+                    required: " ",
+                },
+            },
+            errorElement: 'span',
+            errorPlacement: function(error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight: function(element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+            },
+            unhighlight: function(element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+            }
+        });
+
+    });
+</script>
+
+</html>
